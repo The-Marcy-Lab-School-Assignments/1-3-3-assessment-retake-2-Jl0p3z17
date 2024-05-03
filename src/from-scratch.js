@@ -16,11 +16,24 @@ const generateMultiplesOf5ToNum = () => {
 const isLongArray = () => {
 };
 
-const addToFrontOrBack = () => {
+const addToFrontOrBack = (arr, value, isBack) => {
+  if (value === undefined || value === null) {
+    return arr;
+  }
+
+  if (isBack) {
+    return arr.push(value)
+  } else {
+    arr.unshift(value)
+  }
+}
+
+const replaceMiddleValue = (arr, value) => {
+  const middleValue = Math.floor(arr.length / 2);
+  arr[middleValue] = value;
+  return arr;
 };
 
-const replaceMiddleValue = () => {
-};
 
 const getAllXCoordinates = () => {
 };
@@ -34,14 +47,22 @@ const getFavoriteChildName = () => {
 const getPessimisticTotal = () => {
 };
 
-const getNamesOfGreedyGnomes = () => {
+const getNamesOfGreedyGnomes = (gnomes) => {
+  return gnomes.filter(gnome => gnome.stolenDecorations.length > 1).map(gnome => gnome.name);
+
 };
 
-const getAllNumbersFromString = () => {
+const getAllNumbersFromString = (str) => {
+  const numbers = str.match(/\d+(\.\d+)?/g) || [];
+  return numbers.flatMap(number => number.includes('.') ? number.split('.') : [number]);
 };
 
 // Do this only after all else
-const obliterate = () => {
+const obliterate = (obj) => {
+  for (let key in obj) {
+    delete obj[key];
+  }
+  obj.wasObliterated = true;
 };
 
 module.exports = {
