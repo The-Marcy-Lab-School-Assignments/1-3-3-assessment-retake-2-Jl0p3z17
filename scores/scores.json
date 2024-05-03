@@ -61,29 +61,29 @@
       "FrScTe6": 0,
       "FrScTe7": 0,
       "FrScTe8": 0,
-      "FrScTe9": 0,
-      "FrScTe10": 0,
-      "FrScTe11": 0,
+      "FrScTe9": 1,
+      "FrScTe10": 1,
+      "FrScTe11": 1,
       "FrScTe12": 0,
       "FrScTe13": 0,
       "FrScTe14": 0,
       "FrScTe15": 0,
       "FrScTe16": 0,
-      "FrScTe17": 0,
-      "FrScTe18": 0,
-      "FrScTe19": 0,
-      "FrScTe20": 0,
-      "FrScTe21": 0
+      "FrScTe17": 1,
+      "FrScTe18": 1,
+      "FrScTe19": 1,
+      "FrScTe20": 1,
+      "FrScTe21": 1
     },
     "Debug Tests": {
-      "DeTe1": 0,
-      "DeTe2": 0,
-      "DeTe3": 0
+      "DeTe1": 1,
+      "DeTe2": 1,
+      "DeTe3": 1
     }
   },
   "humanReadable": {
-    "From Scratch Tests": "0/21",
-    "finalTestScore": "FINAL SCORE: 0/24",
-    "Debug Tests": "0/3"
+    "From Scratch Tests": "8/21",
+    "finalTestScore": "FINAL SCORE: 11/24",
+    "Debug Tests": "3/3"
   }
 }
